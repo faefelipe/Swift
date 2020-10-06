@@ -21,6 +21,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(button)
+        button.frame = CGRect(x: 0, y: 0, width: 220, height: 55)
+        button.center = view.center
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpOutside)
+        
+    }
+    
+    @objc private func didTapButton() {
         
     }
 
