@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        createStackView()
     }
     
     func createStackView() {
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         label.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
         label.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
-        let stackView = UIStackView(arrangedSubviews: [imageView], label)
+        let stackView = UIStackView(arrangedSubviews: [imageView, label])
         stackView.frame = view.bounds
         view.addSubview(stackView)
     }
