@@ -31,12 +31,23 @@ class ViewController: UIViewController {
         view.addSubview(button)
         button.frame = CGRect(x: 0, y: 0, width: 220, height: 55)
         button.center = view.center
-        button.addTarget(self, action: #selector(didTapButton), for: .touchUpOutside)
+        button.addTarget(self,
+                         action: #selector(didTapButton),
+                         for: .touchUpOutside)
+        
+        view.addSubview(progressView)
+        progressView.frame = CGRect(x: 10, y: 100, width: view.frame.size.width-20, height: 20)
+        progressView.setProgress(0, animated: false)
+        
         
     }
     
     @objc private func didTapButton() {
-        
+        for x in 0..<100 {
+            DispatchQueue.main.asyncAfter(deadline: .now()+(Double(x)*0.25), execute: {
+                self.progressView.setProgress(Float(x)/100, animated: true)
+            })
+        }
     }
 
 }
