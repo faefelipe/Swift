@@ -19,6 +19,13 @@ class ViewController: UIViewController {
         return button
     }()
     
+    private let progressView: UIProgressView = {
+        let progressView = UIProgressView(progressViewStyle: .bar)
+        progressView.trackTintColor = .gray
+        progressView.progressTintColor = .systemBlue
+        return progressView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(button)
