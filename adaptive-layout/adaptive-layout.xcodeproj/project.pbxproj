@@ -13,6 +13,13 @@
 		00B624D125CDE79A00BC9BB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B624CF25CDE79A00BC9BB8 /* Main.storyboard */; };
 		00B624D325CDE79F00BC9BB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B624D225CDE79F00BC9BB8 /* Assets.xcassets */; };
 		00B624D625CDE79F00BC9BB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B624D425CDE79F00BC9BB8 /* LaunchScreen.storyboard */; };
+		00B624E525CDEA1400BC9BB8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B624E425CDEA1400BC9BB8 /* Device.swift */; };
+		00B624E825CDF03500BC9BB8 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B624E725CDF03500BC9BB8 /* Dimension.swift */; };
+		00B624EB25CDF10400BC9BB8 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B624EA25CDF10400BC9BB8 /* Font.swift */; };
+		00C1804125CF75F200161321 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C1804025CF75F200161321 /* CGFloatExtension.swift */; };
+		00C1804425CF760A00161321 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C1804325CF760A00161321 /* UIViewExtension.swift */; };
+		00C1804725CF781100161321 /* AdaptiveLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C1804625CF781100161321 /* AdaptiveLayoutHelper.swift */; };
+		00C1804A25CF853700161321 /* AdaptedConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C1804925CF853700161321 /* AdaptedConstraint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		00B624D225CDE79F00BC9BB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00B624D525CDE79F00BC9BB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00B624D725CDE79F00BC9BB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B624E425CDEA1400BC9BB8 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		00B624E725CDF03500BC9BB8 /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		00B624EA25CDF10400BC9BB8 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		00C1804025CF75F200161321 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
+		00C1804325CF760A00161321 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		00C1804625CF781100161321 /* AdaptiveLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayoutHelper.swift; sourceTree = "<group>"; };
+		00C1804925CF853700161321 /* AdaptedConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptedConstraint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				00B624E325CDE8F600BC9BB8 /* Subclasses */,
-				00B624E225CDE8EA00BC9BB8 /* Resources */,
 				00B624E125CDE8DB00BC9BB8 /* Helpers */,
 				00B624E025CDE8CD00BC9BB8 /* Extensions */,
 				00B624DF25CDE88600BC9BB8 /* Enums */,
@@ -83,6 +96,9 @@
 		00B624DF25CDE88600BC9BB8 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				00B624E425CDEA1400BC9BB8 /* Device.swift */,
+				00B624E725CDF03500BC9BB8 /* Dimension.swift */,
+				00B624EA25CDF10400BC9BB8 /* Font.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -90,6 +106,8 @@
 		00B624E025CDE8CD00BC9BB8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				00C1804025CF75F200161321 /* CGFloatExtension.swift */,
+				00C1804325CF760A00161321 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -97,20 +115,15 @@
 		00B624E125CDE8DB00BC9BB8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				00C1804625CF781100161321 /* AdaptiveLayoutHelper.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		00B624E225CDE8EA00BC9BB8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		00B624E325CDE8F600BC9BB8 /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				00C1804925CF853700161321 /* AdaptedConstraint.swift */,
 			);
 			path = Subclasses;
 			sourceTree = "<group>";
@@ -185,9 +198,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C1804A25CF853700161321 /* AdaptedConstraint.swift in Sources */,
 				00B624CE25CDE79A00BC9BB8 /* ViewController.swift in Sources */,
 				00B624CA25CDE79A00BC9BB8 /* AppDelegate.swift in Sources */,
+				00B624EB25CDF10400BC9BB8 /* Font.swift in Sources */,
+				00C1804725CF781100161321 /* AdaptiveLayoutHelper.swift in Sources */,
+				00C1804125CF75F200161321 /* CGFloatExtension.swift in Sources */,
 				00B624CC25CDE79A00BC9BB8 /* SceneDelegate.swift in Sources */,
+				00B624E825CDF03500BC9BB8 /* Dimension.swift in Sources */,
+				00C1804425CF760A00161321 /* UIViewExtension.swift in Sources */,
+				00B624E525CDEA1400BC9BB8 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
